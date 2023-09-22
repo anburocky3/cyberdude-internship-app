@@ -15,7 +15,7 @@ function MenuLink({ label, href }: HeaderMenu) {
     <li>
       <a
         href={href}
-        className="underline-offset-4 hover:text-orange-500 hover:underline"
+        className="text-gray-600 underline-offset-4 hover:text-orange-600 hover:underline"
       >
         {label}
       </a>
@@ -25,7 +25,7 @@ function MenuLink({ label, href }: HeaderMenu) {
 
 export default function TheNavbar() {
   return (
-    <header className="bg-white px-10 py-5 text-sm">
+    <header className="fixed inset-x-0 bg-white px-10 text-sm">
       <div className="container mx-auto flex items-center justify-between">
         <div className="">
           <img src={CyberDudeLogoBlack} alt="CyberDude logo" width={140} />

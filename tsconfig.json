@@ -21,10 +21,10 @@
     "noFallthroughCasesInSwitch": true,
 
     // custom
-    "types": ["node"],
+    "types": ["node", "unplugin-icons/types/react"],
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
     // "noImplicitAny": false
   },
   "include": ["src"],

@@ -1,12 +1,7 @@
-import TheNavbar from "@/components/TheNavbar";
+import Homepage from "./views/homepage";
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <TheNavbar />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
-  );
+  return <Homepage />;
 }
 
 export default App;
