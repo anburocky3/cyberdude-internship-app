@@ -1,4 +1,4 @@
-import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
+// import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
 import CyberDudeLogoWhite from "../assets/cyberdude-logo-white.svg";
 import { HeaderMenu } from "@/types";
 
