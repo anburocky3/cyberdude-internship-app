@@ -32,7 +32,7 @@ function Homepage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <TheNavbar />
-      <section className="flex flex-col items-center justify-center bg-white px-10 pb-0 pt-32 sm:pt-0 md:flex md:px-20 md:py-32">
+      <section className="flex flex-col items-center justify-center bg-red-50 px-10 pb-0 pt-32 sm:pt-0 md:flex md:px-20 md:py-32">
         <div className="max-w-lg">
           <h3 className="text-5xl font-bold">
             Master <span className="text-red-400">Full Stack</span> <br />
@@ -85,21 +85,18 @@ function Homepage() {
           </div>
         </div>
         <div>
-          <img
-            src="https://img.freepik.com/free-psd/3d-nft-icon-developer-male-illustration_629802-6.jpg?w=826&t=st=1695405932~exp=1695406532~hmac=c52f6315aa4a14f2345cf6ba70f780b513864e77f4bd75217430733a160687fa"
-            alt="Developer Male"
-          />
+          <img src="/images/developer_male.png" alt="Developer Male" />
         </div>
       </section>
 
       {/* What you will learn with us */}
-      <section className="bg-red-500 py-5 text-white">
+      <section className="bg-red-500 py-20 text-white md:py-10">
         <div className="text-center">
           <h4 className="text-xl font-semibold">
             What Your Will Learn With Us?
           </h4>
         </div>
-        <div className="my-10 space-y-0 md:my-20">
+        <div className="my-10 space-y-0 md:my-10">
           <div className="flex flex-col items-center md:flex">
             <div className="frontend-tech px-20">
               <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
@@ -265,6 +262,7 @@ function Homepage() {
         <div className="mt-10 flex flex-wrap justify-center gap-2 space-x-2 px-10 text-center text-sm md:px-0">
           {techSkills.map((skill) => (
             <a
+              key={`skills-${skill.id}`}
               href="#"
               className={
                 "flex items-center rounded px-4 py-1 font-semibold text-white transition-all  " +
@@ -272,7 +270,7 @@ function Homepage() {
                   ? "bg-blue-900  hover:bg-blue-950"
                   : skill.type === "backend"
                   ? "bg-yellow-500 text-black hover:bg-yellow-600"
-                  : "bg-white text-blue-600 hover:bg-gray-200")
+                  : "bg-white !text-blue-600 hover:bg-gray-200")
               }
             >
               <MaterialSymbolsTrophyOutline className="mr-2" /> {skill.title}

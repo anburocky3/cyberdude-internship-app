@@ -1,4 +1,5 @@
 import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
+import CyberDudeLogoWhite from "../assets/cyberdude-logo-white.svg";
 import { HeaderMenu } from "@/types";
 
 const menuData: HeaderMenu[] = [
@@ -15,7 +16,7 @@ function MenuLink({ label, href }: HeaderMenu) {
     <li>
       <a
         href={href}
-        className="font-medium text-gray-600 underline-offset-4 hover:text-orange-600 hover:underline"
+        className="font-medium text-gray-200 underline-offset-8 hover:text-orange-600 hover:underline"
       >
         {label}
       </a>
@@ -25,15 +26,15 @@ function MenuLink({ label, href }: HeaderMenu) {
 
 export default function TheNavbar() {
   return (
-    <header className="fixed inset-x-0 bg-white px-10">
+    <header className="fixed inset-x-0 bg-gray-800 px-10 py-5">
       <div className="container mx-auto flex items-center justify-between">
         <div className="">
-          <img src={CyberDudeLogoBlack} alt="CyberDude logo" width={140} />
+          <img src={CyberDudeLogoWhite} alt="CyberDude logo" width={140} />
         </div>
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-orange-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-orange-400 dark:hover:bg-orange-700 dark:focus:ring-orange-600 md:hidden"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -47,9 +48,9 @@ export default function TheNavbar() {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>
