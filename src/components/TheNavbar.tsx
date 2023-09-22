@@ -15,7 +15,7 @@ function MenuLink({ label, href }: HeaderMenu) {
     <li>
       <a
         href={href}
-        className="text-gray-600 underline-offset-4 hover:text-orange-600 hover:underline"
+        className="font-medium text-gray-600 underline-offset-4 hover:text-orange-600 hover:underline"
       >
         {label}
       </a>
@@ -25,12 +25,36 @@ function MenuLink({ label, href }: HeaderMenu) {
 
 export default function TheNavbar() {
   return (
-    <header className="fixed inset-x-0 bg-white px-10 text-sm">
+    <header className="fixed inset-x-0 bg-white px-10">
       <div className="container mx-auto flex items-center justify-between">
         <div className="">
           <img src={CyberDudeLogoBlack} alt="CyberDude logo" width={140} />
         </div>
-        <ul className="flex items-center space-x-10">
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <ul className="hidden items-center space-x-10 md:flex">
           {menuData.map((headerMenu, index) => {
             return (
               <MenuLink

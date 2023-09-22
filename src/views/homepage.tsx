@@ -32,7 +32,7 @@ function Homepage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <TheNavbar />
-      <section className="flex items-center justify-center bg-white px-20">
+      <section className="flex flex-col items-center justify-center bg-white px-10 pb-0 pt-32 sm:pt-0 md:flex md:px-20 md:py-32">
         <div className="max-w-lg">
           <h3 className="text-5xl font-bold">
             Master <span className="text-red-400">Full Stack</span> <br />
@@ -59,7 +59,7 @@ function Homepage() {
             <abbr title="Frontend Developer">front-end</abbr> and
             <abbr title="Backend Developer">back-end</abbr> development workflow
           </p>
-          <div className="my-5 flex items-center space-x-4 text-sm">
+          <div className="my-5 flex flex-col items-center space-x-4 space-y-4 text-sm md:flex md:space-y-0">
             <span className="font-semibold text-green-600">Similar: </span>
             <a
               href="#"
@@ -74,8 +74,8 @@ function Homepage() {
               Frontend / Backend Developer
             </a>
           </div>
-          <div className="flex items-center space-x-10 text-sm">
-            <button className="flex items-center rounded bg-red-400 px-4 py-2 font-medium text-white hover:bg-red-500">
+          <div className="flex flex-col items-center space-x-10 space-y-2 text-sm md:flex md:space-y-0">
+            <button className="flex w-full items-center justify-center rounded bg-red-400 px-4 py-2 font-medium text-white hover:bg-red-500">
               <span>Start Here</span>
               <MaterialSymbolsArrowRightAltRounded className="ml-2 text-lg" />
             </button>
@@ -99,8 +99,8 @@ function Homepage() {
             What Your Will Learn With Us?
           </h4>
         </div>
-        <div className="my-20 space-y-8">
-          <div className="flex items-center">
+        <div className="my-10 space-y-0 md:my-20">
+          <div className="flex flex-col items-center md:flex">
             <div className="frontend-tech px-20">
               <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
                 <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
@@ -108,7 +108,7 @@ function Homepage() {
                 </div>
                 <span>Frontend Technologies</span>
               </div>
-              <div className="flex max-w-xl space-x-4 rounded-b rounded-tr bg-gray-800 px-10 py-5">
+              <div className="flex max-w-xl flex-col items-center space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-x-4 md:space-y-0">
                 <a href="#">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
@@ -138,14 +138,14 @@ function Homepage() {
                 />
               </div>
             </div>
-            <div className="backend-tech  px-20">
+            <div className="backend-tech px-20 py-10 sm:py-0">
               <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
                 <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
                   2
                 </div>
                 <span>Backend Technologies</span>
               </div>
-              <div className="flex max-w-xl items-center space-x-4 rounded-b rounded-tr bg-gray-800 px-10 py-5">
+              <div className="flex max-w-xl flex-col items-center space-x-4  space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-y-0">
                 <a href="#">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
@@ -176,15 +176,15 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="flex items-center">
-            <div className="frontend-tech px-20">
+          <div className="flex flex-col items-center space-y-10 md:flex md:space-y-0">
+            <div className="creativity px-20 ">
               <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
                 <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
                   3
                 </div>
                 <span>Creativity</span>
               </div>
-              <div className="flex max-w-xl space-x-4 rounded-b rounded-tr bg-gray-800 px-10 py-5">
+              <div className="flex max-w-xl flex-col items-center space-x-4 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:flex md:space-y-0">
                 <a href="#">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
@@ -221,7 +221,7 @@ function Homepage() {
                 </div>
                 <span>Deployment & Other experiences</span>
               </div>
-              <div className="flex max-w-xl items-center space-x-4 rounded-b rounded-tr bg-gray-800 px-10 py-5">
+              <div className="flex max-w-xl flex-col items-center space-x-4 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-y-0">
                 <a href="#">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
@@ -253,7 +253,7 @@ function Homepage() {
             </div>
           </div>
         </div>
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl px-10 text-center md:px-0">
           <h4 className="text-xl font-semibold">Focused Curriculum</h4>
           <p className="my-3 justify-stretch text-sm text-gray-200">
             In This Journey, We covered almost everything you wanted to know as
@@ -262,7 +262,7 @@ function Homepage() {
             had already covered. Let’ sail your journey with us.
           </p>
         </div>
-        <div className="mb-10 flex flex-wrap justify-center gap-2 space-x-2 px-20 text-center text-sm">
+        <div className="mt-10 flex flex-wrap justify-center gap-2 space-x-2 px-10 text-center text-sm md:px-0">
           {techSkills.map((skill) => (
             <a
               href="#"
