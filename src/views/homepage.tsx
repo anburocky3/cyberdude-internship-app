@@ -32,8 +32,8 @@ function Homepage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <TheNavbar />
-      <section className="flex flex-col items-center justify-center bg-red-50 px-10 pb-0 pt-32 sm:pt-0 md:flex md:px-20 md:py-32">
-        <div className="max-w-lg">
+      <section className="flex flex-col items-center justify-center bg-orange-50 px-10 pb-0 pt-32 sm:pt-0 md:flex-row md:px-20 md:py-32">
+        <div className="max-w-xl">
           <h3 className="text-5xl font-bold">
             Master <span className="text-red-400">Full Stack</span> <br />
             <span className="text-red-400">Engineering</span> from <br />
@@ -59,7 +59,7 @@ function Homepage() {
             <abbr title="Frontend Developer">front-end</abbr> and
             <abbr title="Backend Developer">back-end</abbr> development workflow
           </p>
-          <div className="my-5 flex flex-col items-center space-x-4 space-y-4 text-sm md:flex md:space-y-0">
+          <div className="my-5 flex flex-col items-center space-x-4 space-y-4 text-sm md:flex-row md:space-y-0">
             <span className="font-semibold text-green-600">Similar: </span>
             <a
               href="#"
@@ -74,8 +74,8 @@ function Homepage() {
               Frontend / Backend Developer
             </a>
           </div>
-          <div className="flex flex-col items-center space-x-10 space-y-2 text-sm md:flex md:space-y-0">
-            <button className="flex w-full items-center justify-center rounded bg-red-400 px-4 py-2 font-medium text-white hover:bg-red-500">
+          <div className="flex flex-col items-center space-x-10 space-y-2 text-sm md:flex-row md:space-y-0">
+            <button className="flex w-full items-center justify-center rounded bg-red-400 px-4 py-2 font-medium text-white hover:bg-red-500 md:w-fit">
               <span>Start Here</span>
               <MaterialSymbolsArrowRightAltRounded className="ml-2 text-lg" />
             </button>
@@ -96,157 +96,133 @@ function Homepage() {
             What Your Will Learn With Us?
           </h4>
         </div>
-        <div className="my-10 space-y-0 md:my-10">
-          <div className="flex flex-col items-center md:flex">
-            <div className="frontend-tech px-20">
-              <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
-                <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
-                  1
-                </div>
-                <span>Frontend Technologies</span>
+        <div className="mx-auto my-10 grid  grid-cols-1 gap-4 px-10 md:grid-cols-2 md:px-60">
+          <div className="frontend-tech ">
+            <div className="flex max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800 md:w-fit">
+              <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
+                1
               </div>
-              <div className="flex max-w-xl flex-col items-center space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-x-4 md:space-y-0">
-                <a href="#">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-                    className="w-20"
-                    alt=""
-                  />
-                </a>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://plugins.jetbrains.com/files/15321/400460/icon/pluginIcon.png"
-                  className="w-20"
-                  alt=""
-                />
-              </div>
+              <span>Frontend Technologies</span>
             </div>
-            <div className="backend-tech px-20 py-10 sm:py-0">
-              <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
-                <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
-                  2
-                </div>
-                <span>Backend Technologies</span>
-              </div>
-              <div className="flex max-w-xl flex-col items-center space-x-4  space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-y-0">
-                <a href="#">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                    className="w-20"
-                    alt=""
-                  />
-                </a>
+            <div className="flex max-w-xl flex-col items-center space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex-row md:space-x-4 md:space-y-0">
+              <a href="#">
                 <img
-                  src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
-                  className="w-14"
-                  alt=""
-                />
-                <img
-                  src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
-                  className="w-11"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
-                  className="w-20 bg-white px-2 py-4"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MySQL_textlogo.svg/2560px-MySQL_textlogo.svg.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
                   className="w-20"
                   alt=""
                 />
-              </div>
+              </a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                className="w-20"
+                alt=""
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+                className="w-20"
+                alt=""
+              />
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+                className="w-20"
+                alt=""
+              />
+              <img
+                src="https://plugins.jetbrains.com/files/15321/400460/icon/pluginIcon.png"
+                className="w-20"
+                alt=""
+              />
             </div>
           </div>
-          <div className="flex flex-col items-center space-y-10 md:flex md:space-y-0">
-            <div className="creativity px-20 ">
-              <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
-                <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
-                  3
-                </div>
-                <span>Creativity</span>
+          <div className="backend-tech   sm:py-0">
+            <div className="flex max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800 md:w-fit">
+              <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
+                2
               </div>
-              <div className="flex max-w-xl flex-col items-center space-x-4 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:flex md:space-y-0">
-                <a href="#">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png"
-                    className="w-20"
-                    alt=""
-                  />
-                </a>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
-                  className="w-20"
-                  alt=""
-                />
-                <img
-                  src="https://plugins.jetbrains.com/files/15321/400460/icon/pluginIcon.png"
-                  className="w-20"
-                  alt=""
-                />
-              </div>
+              <span>Backend Technologies</span>
             </div>
-            <div className="deployment-tech px-20">
-              <div className="flex w-fit max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800">
-                <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
-                  4
-                </div>
-                <span>Deployment & Other experiences</span>
-              </div>
-              <div className="flex max-w-xl flex-col items-center space-x-4 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex md:space-y-0">
-                <a href="#">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                    className="w-20"
-                    alt=""
-                  />
-                </a>
+            <div className="flex max-w-xl flex-col items-center space-x-4  space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex-row md:space-y-0">
+              <a href="#">
                 <img
-                  src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
-                  className="w-14"
-                  alt=""
-                />
-                <img
-                  src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
-                  className="w-11"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
-                  className="w-20 bg-white px-2 py-4"
-                  alt=""
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MySQL_textlogo.svg/2560px-MySQL_textlogo.svg.png"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
                   className="w-20"
                   alt=""
                 />
+              </a>
+              <img
+                src="https://static-00.iconduck.com/assets.00/node-js-icon-227x256-913nazt0.png"
+                className="w-14"
+                alt=""
+              />
+              <img
+                src="https://assets.stickpng.com/images/5847f40ecef1014c0b5e488a.png"
+                className="w-11"
+                alt=""
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+                className="w-20 bg-white px-2 py-4"
+                alt=""
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/MySQL_textlogo.svg/2560px-MySQL_textlogo.svg.png"
+                className="w-20"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="creativity ">
+            <div className="flex max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800 md:w-fit">
+              <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
+                3
               </div>
+              <span>Creativity</span>
+            </div>
+            <div className="flex max-w-xl flex-col items-center space-x-10 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex-row  md:space-y-0">
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/2101px-Adobe_Photoshop_CC_icon.svg.png"
+                  className="w-20"
+                  alt=""
+                />
+              </a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/2101px-Adobe_Illustrator_CC_icon.svg.png"
+                className="w-20"
+                alt=""
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png"
+                className="w-12"
+                alt=""
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/2101px-Adobe_Premiere_Pro_CC_icon.svg.png"
+                className="w-20"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="deployment-tech 0">
+            <div className="flex max-w-xl items-center rounded-tr border border-l-4 border-blue-300 bg-white px-5 py-1 font-semibold text-blue-800 md:w-fit">
+              <div className="mr-2 flex h-6 w-6 items-center justify-center rounded-full bg-blue-500 font-semibold text-white">
+                4
+              </div>
+              <span>Tooling, Deployment & Other experiences</span>
+            </div>
+            <div className="flex max-w-xl flex-col items-center space-x-10 space-y-4 rounded-b rounded-tr bg-gray-800 px-10 py-5 md:flex-row md:space-y-0">
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                  className="w-20"
+                  alt="Github Logo"
+                />
+              </a>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/2560px-Netlify_logo.svg.png"
+                className="w-36"
+                alt="Netlify Logo"
+              />
             </div>
           </div>
         </div>
@@ -259,7 +235,7 @@ function Homepage() {
             had already covered. Let’ sail your journey with us.
           </p>
         </div>
-        <div className="mt-10 flex flex-wrap justify-center gap-2 space-x-2 px-10 text-center text-sm md:px-0">
+        <div className="mt-10 flex flex-wrap justify-center gap-2 space-x-2 px-10 text-center text-sm md:px-20">
           {techSkills.map((skill) => (
             <a
               key={`skills-${skill.id}`}

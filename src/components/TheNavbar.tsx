@@ -1,5 +1,5 @@
-// import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
-import CyberDudeLogoWhite from "../assets/cyberdude-logo-white.svg";
+import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
+// import CyberDudeLogoWhite from "../assets/cyberdude-logo-white.svg";
 import { HeaderMenu } from "@/types";
 
 const menuData: HeaderMenu[] = [
@@ -16,7 +16,7 @@ function MenuLink({ label, href }: HeaderMenu) {
     <li>
       <a
         href={href}
-        className="font-medium text-gray-200 underline-offset-8 hover:text-orange-600 hover:underline"
+        className="font-medium text-gray-700 underline-offset-8 hover:text-orange-600 hover:underline"
       >
         {label}
       </a>
@@ -26,10 +26,10 @@ function MenuLink({ label, href }: HeaderMenu) {
 
 export default function TheNavbar() {
   return (
-    <header className="fixed inset-x-0 bg-gray-800 px-10 py-5">
+    <header className="fixed inset-x-0 bg-orange-50  px-10 py-5">
       <div className="container mx-auto flex items-center justify-between">
         <div className="">
-          <img src={CyberDudeLogoWhite} alt="CyberDude logo" width={140} />
+          <img src={CyberDudeLogoBlack} alt="CyberDude logo" width={140} />
         </div>
         <button
           data-collapse-toggle="navbar-default"
