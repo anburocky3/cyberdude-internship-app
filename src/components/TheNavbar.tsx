@@ -26,7 +26,7 @@ function MenuLink({ label, href }: HeaderMenu) {
 
 export default function TheNavbar() {
   return (
-    <header className="fixed inset-x-0 bg-orange-50  px-10 py-5">
+    <header className="fixed inset-x-0 z-50  bg-orange-50 px-10 py-5">
       <div className="container mx-auto flex items-center justify-between">
         <div className="">
           <img src={CyberDudeLogoBlack} alt="CyberDude logo" width={140} />

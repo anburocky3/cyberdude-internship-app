@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@iconify-json/material-symbols": "^1.1.59",
+    "@iconify-json/mdi": "^1.1.54",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
     "@types/node": "^20.6.3",

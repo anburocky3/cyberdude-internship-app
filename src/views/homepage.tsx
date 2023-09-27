@@ -3,6 +3,12 @@ import MaterialSymbolsVolumeUpRounded from "~icons/material-symbols/volume-up-ro
 import MaterialSymbolsArrowRightAltRounded from "~icons/material-symbols/arrow-right-alt-rounded";
 import MaterialSymbolsSlowMotionVideo from "~icons/material-symbols/slow-motion-video";
 import MaterialSymbolsTrophyOutline from "~icons/material-symbols/trophy-outline";
+import MaterialSymbolsArrowRightAlt from "~icons/material-symbols/arrow-right-alt";
+import MaterialSymbolsArrowDownward from "~icons/material-symbols/arrow-downward";
+import MdiFacebookBox from "~icons/mdi/facebook-box";
+import MdiInstagram from "~icons/mdi/instagram";
+import MdiYoutube from "~icons/mdi/youtube";
+import MdiTwitter from "~icons/mdi/twitter";
 
 const techSkills = [
   { id: 1, title: "HTML", type: "frontend" },
@@ -11,7 +17,7 @@ const techSkills = [
   { id: 4, title: "CSS Grid", type: "frontend" },
   { id: 5, title: "SASS", type: "frontend" },
   { id: 6, title: "Bootstrap", type: "frontend" },
-  { id: 7, title: "TailwindCSS", type: "frontend" },
+  { id: 7, title: "TailwINCSS", type: "frontend" },
   { id: 8, title: "Javascript", type: "frontend" },
   { id: 9, title: "Modern Javascript", type: "frontend" },
   { id: 10, title: "Javascript DOM", type: "frontend" },
@@ -26,6 +32,46 @@ const techSkills = [
   { id: 19, title: "Adobe Photoshop", type: "creativity" },
   { id: 20, title: "Adobe Illustrator", type: "creativity" },
   { id: 21, title: "Figma Tool", type: "creativity" },
+];
+
+const beginnerProjects = [
+  { id: 1, image: "", title: "Personal resume" },
+  { id: 2, image: "", title: "Personal Portfolio" },
+  { id: 3, image: "", title: "Bootstrap Landing Page" },
+  { id: 4, image: "", title: "WhatsApp UI Clone" },
+  { id: 5, image: "", title: "Photography Site" },
+];
+
+const advancedProjects = [
+  { id: 1, image: "", title: "eCommerce Website" },
+  { id: 2, image: "", title: "Authentication App" },
+  { id: 3, image: "", title: "Bootstrap Landing Pages" },
+  { id: 4, image: "", title: "React Landing Page Project" },
+  { id: 5, image: "", title: "Clone UI Apps" },
+];
+
+const internPersons = [
+  { id: 1, image: "", name: "Esakki M", country: "IN" },
+  { id: 2, image: "", name: "Vasanth S", country: "IN" },
+  { id: 3, image: "", name: "Surya K", country: "IN" },
+  { id: 4, image: "", name: "Riyaz", country: "IN" },
+  { id: 5, image: "", name: "Hema Venkat", country: "IN" },
+  { id: 6, image: "", name: "Yogha Raj Dhayal N", country: "IN" },
+  { id: 7, image: "", name: "Mohammed Mushkir", country: "LK" },
+  { id: 8, image: "", name: "Bearcin Sweety", country: "MY" },
+  { id: 9, image: "", name: "Rangammal", country: "IN" },
+  { id: 10, image: "", name: "Dinesh S", country: "IN" },
+  { id: 11, image: "", name: "Jeya Roshini", country: "IN" },
+  { id: 12, image: "", name: "Swetha Ramesh", country: "IN" },
+  { id: 13, image: "", name: "Shajid Shafee", country: "LK" },
+  { id: 14, image: "", name: "Muthu Akalya", country: "IN" },
+  { id: 15, image: "", name: "Vijayavedhasekaran", country: "IN" },
+  { id: 16, image: "", name: "Sudharsan", country: "IN" },
+  { id: 17, image: "", name: "Khaja Sharif", country: "IN" },
+  { id: 18, image: "", name: "Gayathri H G", country: "IN" },
+  { id: 19, image: "", name: "KishoreKumar K", country: "IN" },
+  { id: 20, image: "", name: "Sathesh PC", country: "IN" },
+  { id: 21, image: "", name: "Muthukumari M", country: "IN" },
 ];
 
 function Homepage() {
@@ -123,7 +169,7 @@ function Homepage() {
                 alt=""
               />
               <img
-                src="https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png"
+                src="https://cdn1.iconfINer.com/data/icons/programing-development-8/24/react_logo-512.png"
                 className="w-20"
                 alt=""
               />
@@ -254,6 +300,292 @@ function Homepage() {
           ))}
         </div>
       </section>
+
+      {/* What we will build */}
+      <section className="container mx-auto px-5 py-10">
+        <h4 className="text-center text-2xl font-bold">
+          What You Will Build Here? 🚀
+        </h4>
+
+        <div className="mx-auto my-10 max-w-4xl rounded-xl bg-gray-800 p-4 text-center text-white">
+          <p>
+            In our journey, We are going to build some massive projects that
+            could elevate your skills in the tech stacks. Let’s fIN out what are
+            the real-life projects that we are going to build? From beginner
+            level to advanced level and it will slowly boost your experience to
+            build things. Yes. <strong>BUILD THINGS.</strong>
+          </p>
+        </div>
+
+        <div className="py-3">
+          <h4 className="text-xl font-bold">Beginner Level - Projects</h4>
+          <div className="grid items-center gap-5 md:grid-cols-7">
+            {beginnerProjects.map((project) => (
+              <div className="mt-3" key={`beginner-projects-${project.id}`}>
+                <div className="mb-3 h-40 w-40 rounded-xl bg-gray-800"></div>
+                <p className="px-2 font-medium">{project.title}</p>
+              </div>
+            ))}
+            <div className="col-span-2">
+              <h4 className="text-2xl font-bold text-orange-600">
+                & Much More
+                <MaterialSymbolsArrowRightAlt className="inline-flex" />
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div className="py-3">
+          <h4 className="text-xl font-bold">
+            Intermediate to Advanced Level - Projects
+          </h4>
+          <div className="grid items-center gap-5 md:grid-cols-7">
+            {advancedProjects.map((project) => (
+              <div className="mt-3" key={`beginner-projects-${project.id}`}>
+                <div className="mb-3 h-40 w-40 rounded-xl bg-gray-800"></div>
+                <p className="px-2 font-medium">{project.title}</p>
+              </div>
+            ))}
+            <div className="col-span-2">
+              <h4 className="text-2xl font-bold text-orange-600">
+                & Much More
+                <MaterialSymbolsArrowRightAlt className="inline-flex" />
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 flex justify-center">
+          <MaterialSymbolsArrowDownward className=" text-4xl text-orange-600" />
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="bg-red-600 px-3 py-20">
+        <div className="container mx-auto text-center">
+          <h4 className="text-4xl font-bold text-white">
+            Frequently Asked Questions
+          </h4>
+          <div className="mx-auto my-10 max-w-4xl rounded-xl bg-yellow-500 p-4 text-center font-medium">
+            <p>
+              In this Frequently Asked Questions (FAQ) section, We were able to
+              answer the most common questions that an INividual has. However,
+              let us know if you had any specific questions regarding the tech
+              stacks that you going to learn with us.
+            </p>
+          </div>
+
+          <div className="grid gap-x-10 gap-y-20 pt-10 md:grid-cols-3">
+            {[1, 2, 3, 4, 5, 6].map((num, INex) => (
+              <div className="relative rounded-b-3xl rounded-r-3xl bg-gray-100 px-10 py-5">
+                <div className="absolute -top-10 left-0 rounded-tl-full rounded-tr-full bg-yellow-500 px-4 py-1 text-2xl font-bold text-red-500">
+                  #{INex + 1}
+                </div>
+                <h4 className="text-lg font-semibold">
+                  Do i need a PC to Start?
+                </h4>
+                <p className="text-sm text-gray-600">
+                  Yes, Obviously You need a desktop or Laptop to continue on
+                  this journey. Cannot use smartphone instead PC for coding.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet our Interns */}
+      <section className="bg-yellow-400 px-5 py-10">
+        <div className="container mx-auto">
+          <h4 className="text-center text-3xl font-extrabold">
+            Meet Our Interns
+          </h4>
+
+          <div className="my-10 grid gap-5 md:grid-cols-8">
+            {internPersons.map((interns) => (
+              <a
+                href="#"
+                className="flex flex-col items-center rounded p-5 transition-all  hover:bg-gray-50"
+              >
+                {/* <img src={interns.image} alt={interns.name} /> */}
+                <div className="h-20 w-20 rounded-full bg-gray-600"></div>
+                <span className="pt-2 font-medium">{interns.name}</span>
+                <img
+                  src={`https://flagsapi.com/${interns.country}/flat/32.png`}
+                  alt={interns.country}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <footer className="bg-gray-800 py-10 text-white">
+        <div className="mx-auto max-w-screen-xl">
+          <div className="flex flex-col items-center justify-between space-x-10 space-y-10 md:flex-row md:space-y-0">
+            <div className="w-60 space-y-4">
+              <div className="h-20 w-full rounded bg-gray-600"></div>
+              <p className="text-sm text-gray-300">
+                Cyberdude Networks Pvt. Ltd. is creative product startup company
+                that primary focuses on tech and product development.
+              </p>
+              <ul className="flex space-x-4">
+                <li>
+                  <a href="#" className="hover:text-yellow-500">
+                    <MdiFacebookBox />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-yellow-500">
+                    <MdiInstagram />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-yellow-500">
+                    <MdiYoutube />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-yellow-500">
+                    <MdiTwitter />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="grid flex-1 grid-cols-2 gap-5 md:grid-cols-4 ">
+              <div>
+                <h4 className="font-bold">What We Cover?</h4>
+                <ul className="mt-2 space-y-1 text-sm">
+                  <li>
+                    <a href="#" className="font-semibold">
+                      HTML
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      CSS Flexbox & CSS Grid
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Bootstrap CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      TailwindCSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Javascript
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold">Live Sessions</h4>
+                <ul className="mt-2 space-y-1 text-sm">
+                  <li>
+                    <a href="#" className="">
+                      Portfolio Builder
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Giveaway App
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      RTO Builder
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      eCommerce
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Dashboard
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold">For Beginners</h4>
+                <ul className="mt-2 space-y-1 text-sm">
+                  <li>
+                    <a href="#" className="">
+                      HTML
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      JavaScript
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold">Best Playlists</h4>
+                <ul className="mt-2 space-y-1 text-sm">
+                  <li>
+                    <a href="#" className="font-semibold">
+                      HTML
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Javascript
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      ES6+ Concepts
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Bootstrap 5
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      React JS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Tailwind CSS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" className="">
+                      Angular JS
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
