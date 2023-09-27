@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import CyberDudeLogoBlack from "../assets/cyberdude-logo-black.svg";
 // import CyberDudeLogoWhite from "../assets/cyberdude-logo-white.svg";
 import { HeaderMenu } from "@/types";
@@ -14,12 +15,18 @@ const menuData: HeaderMenu[] = [
 function MenuLink({ label, href }: HeaderMenu) {
   return (
     <li>
-      <a
-        href={href}
-        className="font-medium text-gray-700 underline-offset-8 hover:text-orange-600 hover:underline"
+      <NavLink
+        to={href}
+        className={({ isActive, isPending }) => {
+          return isActive
+            ? "font-medium text-orange-600 underline-offset-8 hover:text-orange-600 hover:underline"
+            : isPending
+            ? "pending"
+            : "font-medium text-gray-700 underline-offset-8 hover:text-orange-600 hover:underline ";
+        }}
       >
         {label}
-      </a>
+      </NavLink>
     </li>
   );
 }
