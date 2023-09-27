@@ -1,5 +1,6 @@
 import TheFooter from "@/components/TheFooter";
 import TheNavbar from "@/components/TheNavbar";
+import { Link } from "react-router-dom";
 import MdiChevronRight from "~icons/mdi/chevron-right";
 
 function BrowseByDates() {
@@ -47,9 +48,12 @@ function BrowseByDates() {
                       Internal Meet
                     </button>
                   </div>
-                  <button className="w-full rounded border border-gray-400 px-4 py-2 font-semibold uppercase hover:border-none hover:bg-green-500">
+                  <Link
+                    to={`/internship/${num}`}
+                    className="block w-full rounded border border-gray-400 px-4 py-2 text-center font-semibold uppercase hover:border-none hover:bg-green-500"
+                  >
                     View Detail
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
