@@ -1,7 +1,6 @@
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./views/homepage.tsx";
 import BrowseByDates from "./views/browse-by-dates.tsx";
 import DayDetail from "./views/day-detail.tsx";

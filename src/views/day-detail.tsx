@@ -1,6 +1,6 @@
 import TheFooter from "@/components/TheFooter";
 import TheNavbar from "@/components/TheNavbar";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 // import file from "../md/day1.md";
 
