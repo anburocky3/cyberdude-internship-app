@@ -375,10 +375,10 @@ function Homepage() {
           </div>
 
           <div className="grid gap-x-10 gap-y-20 pt-10 md:grid-cols-3">
-            {[1, 2, 3, 4, 5, 6].map((num, INex) => (
+            {[1, 2, 3, 4, 5, 6].map((num) => (
               <div className="relative rounded-b-3xl rounded-r-3xl bg-gray-100 px-10 py-5">
                 <div className="absolute -top-10 left-0 rounded-tl-full rounded-tr-full bg-yellow-500 px-4 py-1 text-2xl font-bold text-red-500">
-                  #{INex + 1}
+                  #{num}
                 </div>
                 <h4 className="text-lg font-semibold">
                   Do i need a PC to Start?
