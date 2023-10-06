@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./views/homepage.tsx";
 import BrowseByDates from "./views/browse-by-dates.tsx";
 import DayDetail from "./views/day-detail.tsx";
+import Faq from "./views/faq.tsx";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/internship/:day",
     element: <DayDetail />,
+  },
+  {
+    path: "/faqs",
+    element: <Faq />,
   },
 ]);
 

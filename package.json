@@ -38,5 +38,9 @@
     "typescript": "^5.0.2",
     "unplugin-icons": "^0.17.0",
     "vite": "^4.4.5"
-  }
+  },
+  "description": "[![Stars](https://img.shields.io/github/stars/anburocky3/cyberdude-internship-app)](https://github.com/anburocky3/cyberdude-internship-app)\r [![Forks](https://img.shields.io/github/forks/anburocky3/cyberdude-internship-app)](https://github.com/anburocky3/cyberdude-internship-app)\r [![GitHub license](https://img.shields.io/github/license/anburocky3/cyberdude-internship-app)](https://github.com/anburocky3/cyberdude-internship-app)\r ![Anbuselvan Rocky Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fanburocky3%2Fcyberdude-internship-app)\r [![Support Server](https://img.shields.io/discord/742347296091537448.svg?label=Discord&logo=Discord&colorB=7289da)](https://discord.gg/6ktMR65YMy)\r [![Cyberdude youtube](https://img.shields.io/youtube/channel/subscribers/UCteUj8bL1ppZcS70UCWrVfw?style=social)](https://www.youtube.com/c/cyberdudenetworks)",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
