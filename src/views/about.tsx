@@ -100,7 +100,7 @@ function About() {
         <div className="min-h-screen bg-gray-50">
             <TheNavbar />
 
-            <section className="flex flex-col items-center justify-center px-10 pb-0 pt-32 sm:pt-0 md:flex-row md:px-20 md:py-32 md:pb-10">
+            <section className="flex flex-col bg-orange-50 items-center justify-center px-10 pb-0 pt-32 sm:pt-0 md:flex-row md:px-20 md:py-32 md:pb-10">
                 <div className="max-w-xl">
                     <h3 className="text-5xl font-bold">
                         About <span className="text-red-400">Cyberdude Network</span>
