@@ -5,6 +5,7 @@ import Homepage from "./views/homepage.tsx";
 import BrowseByDates from "./views/browse-by-dates.tsx";
 import DayDetail from "./views/day-detail.tsx";
 import Faq from "./views/faq.tsx";
+import About from "./views/about.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/faqs",
     element: <Faq />,
+  },
+  {
+    path: "/about-cyberdude",
+    element: <About />,
   },
 ]);
 
