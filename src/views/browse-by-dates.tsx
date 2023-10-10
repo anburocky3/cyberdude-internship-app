@@ -19,6 +19,22 @@ function BrowseByDates() {
     ? stringSessionData.filter(session => session.week === selectedWeek)
     : stringSessionData;
 
+  const weekOptions = [];
+  for (let i = 1; i <= 26; i++) {
+    weekOptions.push(
+      <option key={i} value={i.toString()}>Week {i}</option>
+    );
+  }
+
+  const buttonText = selectedWeek ? 'Next Week' : 'Next';
+
+  const handleNextWeekClick = () => {
+    if (selectedWeek) {
+      const nextWeek = parseInt(selectedWeek) + 1;
+      setSelectedWeek(nextWeek.toString());
+    }
+  };
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -35,8 +51,7 @@ function BrowseByDates() {
             value={selectedWeek}
           >
             <option value="">Select Week</option>
-            <option value="1">Week 1</option>
-            <option value="2">Week 2</option>
+            {weekOptions}
 
           </select>
         </div>
@@ -83,8 +98,11 @@ function BrowseByDates() {
               </div>
             ))}
           </div>
-          <button className="float-right my-5 flex w-60 items-center justify-between rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600">
-            <span>Next Week</span>
+          <button
+            className="float-right my-5 flex w-60 items-center justify-between rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+            onClick={handleNextWeekClick} // Add click event handler
+          >
+            <span>{buttonText}</span>
             <MdiChevronRight className="" />
           </button>
         </section>
