@@ -3,6 +3,7 @@ import TheFooter from "@/components/TheFooter";
 import TheNavbar from "@/components/TheNavbar";
 import { Link } from "react-router-dom";
 import MdiChevronRight from "~icons/mdi/chevron-right";
+import MdiChevronLeft from "~icons/mdi/chevron-left";
 import sessionData from '../data/internship-data.json';
 
 function BrowseByDates() {
@@ -34,7 +35,13 @@ function BrowseByDates() {
       setSelectedWeek(nextWeek.toString());
     }
   };
-
+  const handlePrevWeekClick = () => {
+    if (parseInt(selectedWeek) > 1) {
+      const nextWeek = parseInt(selectedWeek) - 1;
+      setSelectedWeek(nextWeek.toString());
+    }
+  };
+  
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -102,13 +109,24 @@ function BrowseByDates() {
               ))
             )}
           </div>
-          <button
-            className="float-right my-5 flex w-60 items-center justify-between rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+<div>
+
+<button
+            className="float-right my-5 flex w-40 items-center justify-between rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
             onClick={handleNextWeekClick} // Add click event handler
           >
             <span>{buttonText}</span>
             <MdiChevronRight className="" />
           </button>
+          <button
+            className="float-right my-5 mx-4 flex w-50 items-center justify-between rounded bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+            onClick={handlePrevWeekClick} // Add click event handler
+          >
+           
+            <MdiChevronLeft className="" />
+            <span>prev</span>
+          </button>
+</div>
         </section>
       </main>
       <TheFooter />

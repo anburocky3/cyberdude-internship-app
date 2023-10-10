@@ -4,6 +4,8 @@ import TheNavbar from "@/components/TheNavbar";
 // import file from "../md/day1.md";
 import sessionData from '../data/internship-data.json';
 import { useParams } from 'react-router-dom';
+import MdiChevronLeft from "~icons/mdi/chevron-left";
+
 
 function DayDetail() {
 
@@ -15,7 +17,9 @@ function DayDetail() {
   const isDayValid = sessionData.sessionData.some((session) => session.day === dayNum);
   const daydetail = sessionData.sessionData.find(session => session.day === dayNum);
 
-
+  const goBack = () => {
+    window.history.back(); 
+  };
 
   if (!isDayValid) {
 
@@ -84,6 +88,15 @@ function DayDetail() {
 
       <main className="container mx-auto ">
         <section className="mb-20 mt-10 rounded bg-white px-10 py-10  shadow">
+
+        <button
+            className=" my-5 mx-4 flex w-50 items-center justify-between rounded font-bold bg-gray-400 px-4 py-2 text-white hover:bg-gray-600"
+            onClick={goBack} // Add click event handler
+          >
+           
+            <MdiChevronLeft className="" />
+            <span>Back</span>
+          </button>
           <div className="mt-2 space-y-4 mb-12">
             <h1 className="font-bold text-3xl">What we did? </h1>
             <ul className="ml-8">
