@@ -10,10 +10,12 @@ function DayDetail() {
   const { day } = useParams();
   const dayNum = Number(day);
   let dayIndex = dayNum - 1;
-
+  console.log(dayIndex)
   // Check if there is a session with the specified day
   const isDayValid = sessionData.sessionData.some((session) => session.day === dayNum);
-  const daydetail = sessionData.sessionData[dayIndex];
+  const daydetail = sessionData.sessionData.find(session => session.day === dayNum);
+
+
 
   if (!isDayValid) {
 
@@ -57,23 +59,23 @@ function DayDetail() {
       <section className="bg-orange-200">
         <div className="container mx-auto flex flex-col sm:flex-row  items-center justify-between md:pb-20 p-24 pt-40">
           <div className="space-y-2">
-            <span>Day #{daydetail.day} - (Week {daydetail.week}) ({daydetail.date})</span>
-            <h4 className="text-3xl font-bold">{daydetail.title}</h4>
+            <span>Day #{daydetail?.day} - (Week {daydetail?.week}) ({daydetail?.date})</span>
+            <h4 className="text-3xl font-bold">{daydetail?.title}</h4>
           </div>
           <div className="space-x-2 text-sm flex flex-col sm:flex-row justify-center mt-5 md:mt-0 items-center text-white">
             {
-              daydetail.livestream ? (
+              daydetail?.livestream ? (
                 <button className="rounded bg-red-500 px-4 py-2 font-semibold uppercase hover:bg-red-600">
                   Livestream
                 </button>
-              ) : null // or you can replace null with any other JSX you want to render when shouldRenderButton is false
+              ) : null 
             }
             {
-              daydetail.meet ? (
+              daydetail?.meet ? (
                 <button className="rounded bg-indigo-500 px-4 py-2 mt-3 sm:mt-0 font-semibold uppercase hover:bg-indigo-600">
                   Internal Meet
                 </button>
-              ) : null // or you can replace null with any other JSX you want to render when shouldRenderButton is false
+              ) : null 
             }
 
           </div>
@@ -85,7 +87,7 @@ function DayDetail() {
           <div className="mt-2 space-y-4 mb-12">
             <h1 className="font-bold text-3xl">What we did? </h1>
             <ul className="ml-8">
-              {daydetail.description.whatWeDid.map((item, index) => (
+              {daydetail?.description.whatWeDid.map((item, index) => (
                 <li className="list-disc" key={index}>{item}</li>
               ))}
             </ul>
@@ -93,7 +95,7 @@ function DayDetail() {
           <div className="mt-2 space-y-4 mb-12">
             <h1 className="font-bold text-3xl">What you should do? </h1>
             <ul className="ml-8">
-              {daydetail.description.whatToDo.map((item, index) => (
+              {daydetail?.description.whatToDo.map((item, index) => (
                 <li className="list-disc" key={index}>{item}</li>
               ))}
             </ul>
@@ -101,7 +103,7 @@ function DayDetail() {
           <div className="mt-2 space-y-4 mb-12">
             <h1 className="font-bold text-3xl">Live sessions :</h1>
             <div className="md:ml-4 flex flex-wrap -mx-4">
-              {daydetail.description.youtubeLink.map((item, index) => (
+              {daydetail?.description.youtubeLink.map((item, index) => (
                 <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
                   <div className="relative">
                     <iframe
@@ -118,7 +120,7 @@ function DayDetail() {
 
             <div className="mt-2 space-y-4 mb-12">
               <h1 className="font-bold text-3xl">Tasks assigned:</h1>
-              {daydetail.description.tasks.map((task) => (
+              {daydetail?.description.tasks.map((task) => (
                 <div className="bg-gray-300 rounded-lg p-5" key={task.taskId}>
                   <h1 className="font-semibold">Task #{task.taskId}</h1>
                   <p className="mt-2 mb-3">{task.taskName}</p>
@@ -130,12 +132,12 @@ function DayDetail() {
             <div className="mt-2 space-y-4 mb-12">
               <h1 className="font-bold text-3xl">Tasks completed by our interns :</h1>
               <div className="bg-gray-300 rounded-lg px-3 sm:p-5">
-                {daydetail.description.tasksCompletedBy.map((intern) => (
+                {daydetail?.description.tasksCompletedBy.map((intern) => (
                   <div className=" rounded-lg py-5 flex justify-between items-center" key={intern.internName}>
 
                     <div className="flex justify-center items-center space-x-2 md:space-x-6">
-                      <div className="w-10 h-10 md:h-14 md:w-14 hover:scale-110">
-                        <img src={`https://ui-avatars.com/api/?name=${intern.internName}&background=random`} alt={intern.internName} className="h-auto w-full rounded-full" />
+                      <div className="w-10 h-10 md:h-14 rounded-full bg-gray-600 md:w-14 hover:scale-110">
+                      {/* <img src="" alt="" /> */}
 
                       </div>
                       <h1 className="font-bold">{intern.internName}</h1>

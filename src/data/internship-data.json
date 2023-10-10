@@ -37,6 +37,83 @@
             }
           ]
         }
+      },
+      {
+        "day": 12,
+        "week": 2,
+        "date": "Sept 6th, 2023",
+        "title": "Team Introduction",
+        "livestream": true,
+        "meet": true,
+        "description": {
+          "whatWeDid": [
+            "Introduced ourselves individually.",
+            "Introduced ourselves in the Google meet.",
+            "Evaluated our skill level among other interns."
+          ],
+          "whatToDo": [
+            "Learn the fundamentals of HTML and CSS.",
+            "Complete the task of building a personal resume using only HTML and CSS. You can refer to the livestream video for guidance and instructions."
+          ],
+          "youtubeLink": [
+            "https://www.youtube.com/embed/JtgkaMlPpUQ?si=cCTJpq6sfh0hqod-",
+            "https://www.youtube.com/embed/JtgkaMlPpUQ?si=cCTJpq6sfh0hqod-"
+          ],
+          "tasks": [
+            {
+              "taskId": 1,
+              "taskName": "Build a resume using HTML & CSS alone",
+              "taskCompletingDuration": "5hrs"
+            }
+          ],
+          "tasksCompletedBy": [
+            {
+              "id": 1,
+              "internName": "vasanth",
+              "demo": "https://vk2401.github.io/resumeCDN/",
+              "sourceCode": "https://github.com/Vk2401/resumeCDN"
+            }
+          ]
+        }
+      },
+      {
+        "day": 22,
+        "week": 3,
+        "date": "Sept 6th, 2023",
+        "title": "Team Introduction",
+        "livestream": true,
+        "meet": true,
+        "description": {
+          "whatWeDid": [
+            "Introduced ourselves individually.",
+            "Introduced ourselves in the Google meet.",
+            "Evaluated our skill level among other interns."
+          ],
+          "whatToDo": [
+            "Learn the fundamentals of HTML and CSS.",
+            "Complete the task of building a personal resume using only HTML and CSS. You can refer to the livestream video for guidance and instructions."
+          ],
+          "youtubeLink": [
+            "https://www.youtube.com/embed/JtgkaMlPpUQ?si=cCTJpq6sfh0hqod-",
+            "https://www.youtube.com/embed/JtgkaMlPpUQ?si=cCTJpq6sfh0hqod-"
+          ],
+          "tasks": [
+            {
+              "taskId": 1,
+              "taskName": "Build a resume using HTML & CSS alone",
+              "taskCompletingDuration": "5hrs"
+            }
+          ],
+          "tasksCompletedBy": [
+            {
+              "id": 1,
+              "internName": "vasanth",
+              "img":"",
+              "demo": "https://vk2401.github.io/resumeCDN/",
+              "sourceCode": "https://github.com/Vk2401/resumeCDN"
+            }
+          ]
+        }
       }
     ]
   }
