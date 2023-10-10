@@ -68,14 +68,14 @@ function DayDetail() {
                 <button className="rounded bg-red-500 px-4 py-2 font-semibold uppercase hover:bg-red-600">
                   Livestream
                 </button>
-              ) : null 
+              ) : null
             }
             {
               daydetail?.meet ? (
                 <button className="rounded bg-indigo-500 px-4 py-2 mt-3 sm:mt-0 font-semibold uppercase hover:bg-indigo-600">
                   Internal Meet
                 </button>
-              ) : null 
+              ) : null
             }
 
           </div>
@@ -137,13 +137,13 @@ function DayDetail() {
 
                     <div className="flex justify-center items-center space-x-2 md:space-x-6">
                       <div className="w-10 h-10 md:h-14 rounded-full bg-gray-600 md:w-14 hover:scale-110">
-                      {/* <img src="" alt="" /> */}
+                        {/* <img src="" alt="" /> */}
 
                       </div>
                       <h1 className="font-bold">{intern.internName}</h1>
                     </div>
                     <div className="flex md:space-x-2 flex-col sm:flex-row ">
-                      <a href={intern.demo} target="_blank"  className="bg-blue-500 hover:bg-blue-600 text-white font-bold sm:py-2 sm:px-4 py-1 px-2  rounded">
+                      <a href={intern.demo} target="_blank" className="bg-blue-500 hover:bg-blue-600 text-white font-bold sm:py-2 sm:px-4 py-1 px-2  rounded">
                         demo
                       </a>
                       <a href={intern.sourceCode} target="_blank" className="bg-green-500 mt-3 sm:mt-0 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
