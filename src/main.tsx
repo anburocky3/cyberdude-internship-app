@@ -6,11 +6,14 @@ import BrowseByDates from "./views/browse-by-dates.tsx";
 import DayDetail from "./views/day-detail.tsx";
 import Faq from "./views/faq.tsx";
 import About from "./views/about.tsx";
+import Resources from "./views/resources.tsx";
+import PageNotFound from "./views/errors/404.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+    errorElement: <PageNotFound />,
   },
   {
     path: "/browse-by-dates",
@@ -25,9 +28,21 @@ const router = createBrowserRouter([
     element: <Faq />,
   },
   {
+    path: "/resources",
+    element: <Resources />,
+  },
+  {
     path: "/about-cyberdude",
     element: <About />,
   },
+  {
+    path: "/404",
+    element: <PageNotFound />,
+  },
+  // {
+  //   path: '/*',
+  //   redirect:
+  // }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
